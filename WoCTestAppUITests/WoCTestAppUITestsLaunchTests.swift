@@ -37,7 +37,7 @@ final class WoCTestAppUITestsLaunchTests: XCTestCase {
         XCTAssertEqual(globeImage.label, "Globe", "Globe image should have correct accessibility label")
         
         // Validate text content using value property (SwiftUI uses value instead of label for text content)
-        XCTAssertEqual(helloWorldText.value as? String, "Hello!", "Text should display correct content in value property")
+        XCTAssertEqual(helloWorldText.value as? String, "Hello, world!", "Text should display correct content in value property")
         
         // Validate that we can find both expected UI elements
         XCTAssertEqual(app.staticTexts.count, 4, "Should have exactly 2 static text elements (app title + hello world)")
